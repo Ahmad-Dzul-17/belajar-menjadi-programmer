@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Film Terbaik 2026</title>
+    <link rel="stylesheet" href="tokens.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="komponen.css">
+    <link rel="stylesheet" href="tema.css">
+</head>
+<body>
+  <header>
+    <div class="header-baris">
+      <div>
+        <input type="checkbox" id="tema" class="pengalih-tema">
+        <label for="tema" class="tombol-tema">Tema gelap</label>
+      </div>
+
+      <h1 id="judul">Daftar Film Terbaik 2026</h1>
+
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#judul">Home</a></li>
+          <li><a href="#tabel">Tabel</a></li>
+          <li><a href="#form">Form</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="film" class="katalog" aria-label="Daftar film">
+      <article class="kartu">
+        <a href="https://m.21cineplex.com/id/movies/25MKT2">
+          <img src="image/mortal-kombat-2.jpg" alt="Mortal Combat 2" width="300" height="441">
+        </a>
+        <h2>Mortal Combat 2</h2>
+      </article>
+
+      <article class="kartu">
+        <a href="https://m.21cineplex.com/id/movies/16GITC">
+          <img src="image/ghost-in-the-cell.jpg" alt="Ghost In The Cell" width="300" height="441">
+        </a>
+        <h2>Ghost In The Cell</h2>
+      </article>
+
+      <article class="kartu">
+        <a href="https://m.21cineplex.com/id/movies/16AAMC">
+          <img src="image/ayah-aku-mau-cerita.jpg" alt="Ayah Aku Mau Cerita" width="300" height="441">
+        </a>
+        <h2>Ayah Aku Mau Cerita</h2>
+      </article>
+    </section>
+
+    <section id="tabel">
+      <table>
+        <caption>Temukan film pilihanmu dan lihat detailnya.</caption>
+        <thead>
+          <tr>
+            <th scope="col">Film</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Status</th>
+            <th scope="col">Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Mortal Combat 2</th>
+            <td>Action, Fantasy, Adventure</td>
+            <td>Sudah Tayang</td>
+            <td>8.5</td>
+          </tr>
+          <tr>
+            <th scope="row">Ghost In The Cell</th>
+            <td>Action, Horror, Thriller</td>
+            <td>Sudah Tayang</td>
+            <td>8.7</td>
+          </tr>
+          <tr>
+            <th scope="row">Ayah Aku Mau Cerita</th>
+            <td>Drama, Keluarga, Komedi</td>
+            <td>Sudah Tayang</td>
+            <td>9.2</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="form">
+      <h2>Berikan Rating Film</h2>
+
+      <form action="/simpan" method="post">
+        <div class="form-kolom">
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <div class="form-kolom">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-kolom">
+          <label for="nama-film">Nama Film</label>
+          <select id="nama-film" name="nama-film" required>
+            <option value="">-- Pilih Film --</option>
+            <option value="mortal-combat-2">Mortal Combat 2</option>
+            <option value="ghost-in-the-cell">Ghost In The Cell</option>
+            <option value="ayah-aku-mau-cerita">Ayah Aku Mau Cerita</option>
+          </select>
+        </div>
+
+        <div class="form-kolom">
+          <label for="rating">Rating Film</label>
+          <input type="number" id="rating" name="rating" min="1" max="10" required>
+        </div>
+
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ahmad Dzulfikar Thufail Hakim · 25523267 · 2026</p>
+  </footer>
+</body>
+</html>

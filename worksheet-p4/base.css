@@ -1,0 +1,48 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  font-size: var(--text-md);
+  line-height: 1.6;
+  color: var(--color-fg);
+  background: var(--color-bg);
+  padding: var(--space-4);
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: var(--text-xl);
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: var(--text-md);
+}
+
+main p {
+  max-width: 60ch;
+}
+
+a {
+  color: var(--color-primary);
+}
