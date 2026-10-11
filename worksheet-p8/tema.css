@@ -1,0 +1,63 @@
+.pengalih-tema {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.tombol-tema {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface);
+  color: var(--color-fg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+}
+
+:root:has(#tema:checked) {
+  --color-bg: #0F172A;
+  --color-fg: #E2E8F0;
+  --color-surface: #1E293B;
+  --color-border: #64748B;
+  --color-primary: #5EEAD4;
+  --color-danger: #FF8A8A;
+  --color-focus: #FFC000;
+  --shadow-1: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+:root:has(#tema:checked) .hero-aside {
+  background: #153B3A;
+  border-color: #397A72;
+}
+
+:root:has(#tema:checked) .section-heading p {
+  color: #CBD5E1;
+}
+
+:root:has(#tema:checked) .tag,
+:root:has(#tema:checked) thead,
+:root:has(#tema:checked) tbody tr:nth-child(even) {
+  background: #263E4A;
+  color: #E2E8F0;
+  border-color: #64748B;
+}
+
+:root:has(#tema:checked) .stat {
+  background: #172638;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(:has(#tema)) {
+    --color-bg: #0F172A;
+    --color-fg: #E2E8F0;
+    --color-surface: #1E293B;
+    --color-border: #64748B;
+    --color-primary: #5EEAD4;
+    --color-danger: #FF8A8A;
+    --color-focus: #FFC000;
+    --shadow-1: 0 4px 14px rgba(0, 0, 0, 0.25);
+  }
+}
