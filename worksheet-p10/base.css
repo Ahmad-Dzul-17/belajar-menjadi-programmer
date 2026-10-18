@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: var(--space-4);
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  font-size: var(--text-md);
+  line-height: 1.65;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: var(--text-3xl);
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: var(--text-xl);
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.05rem;
+}
+
+p {
+  max-width: 68ch;
+}
+
+a {
+  color: var(--color-primary);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: #B8F3E8;
+  color: #16332F;
+}
